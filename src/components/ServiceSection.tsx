@@ -1,8 +1,7 @@
 import { Card } from "flowbite-react";
-import { useState } from "react";
 
 export default function ServiceSection() {
-  const [ar, setAr] = useState<number[]>([1, 2, 3, 4, 5, 6]);
+  const ar = [1, 2, 3, 4, 5, 6];
   return (
     <section className="flex justify-center items-center flex-col bg-gray-100" id="services">
       <div className="pt-10 flex justify-center items-center flex-col gap-5">
@@ -15,7 +14,7 @@ export default function ServiceSection() {
         </div>
       </div>
       <section className="flex flex-wrap justify-center items-center p-10 gap-10 m-auto">
-        {ar.map((a) => (
+        {ar.map(() => (
           <Card className="max-w-xs" imgAlt="Meaningful alt text for an image that is not purely decorative" imgSrc="https://flowbite.com/docs/images/carousel/carousel-5.svg">
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
             <p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>

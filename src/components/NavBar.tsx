@@ -1,6 +1,6 @@
 import { Navbar } from "flowbite-react";
 
-export default function NavBar() {
+export default function NavBarSection() {
   return (
     <Navbar fluid rounded>
       <Navbar.Brand>

@@ -7,6 +7,8 @@ export default function ContactFormV2() {
   const onSubmit = async (event: any) => {
     event.preventDefault();
     setResult("Sending....");
+    console.log(result);
+
     const formData = new FormData(event.target);
 
     formData.append("access_key", "bcc5c11a-9cfd-4be8-b682-0660b76e2805"); // Moet nog naar env file! Dit is de key van de mail van de klant!!
