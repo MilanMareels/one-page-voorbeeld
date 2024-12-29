@@ -1,7 +1,6 @@
-import { Card } from "flowbite-react";
+import { serviceItems } from "../data/serviceItems";
 
-export default function ServiceSection() {
-  const ar = [1, 2, 3, 4, 5, 6];
+export default function ServiceSectionBasic() {
   return (
     <section className="flex justify-center items-center flex-col bg-gray-100" id="services">
       <div className="pt-10 flex justify-center items-center flex-col gap-5">
@@ -13,12 +12,17 @@ export default function ServiceSection() {
           </p>
         </div>
       </div>
-      <section className="flex flex-wrap justify-center items-center p-10 gap-10 m-auto">
-        {ar.map(() => (
-          <Card className="max-w-xs" imgAlt="Meaningful alt text for an image that is not purely decorative" imgSrc="https://flowbite.com/docs/images/carousel/carousel-5.svg">
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          </Card>
+      <section className="grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-10 p-10 m-auto">
+        {serviceItems.map((i) => (
+          <div className="relative group cursor-pointer">
+            <img src={i.src} className="rounded transition-transform duration-300 ease-in-out group-hover:scale-105 w-[500px] h-[300px] object-cover" />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+              <h2 className="text-white text-lg font-bold ml-4">{i.title}</h2>
+              <p className="text-white text-sm mt-2 ml-4 mb-4 truncate max-w-full pr-4" title={i.description}>
+                {i.description}
+              </p>
+            </div>
+          </div>
         ))}
       </section>
     </section>
