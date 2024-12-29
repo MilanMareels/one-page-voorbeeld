@@ -1,6 +1,6 @@
 import { serviceItems } from "../data/serviceItems";
 
-export default function ServiceSectionBasic() {
+export default function ServiceSection() {
   return (
     <section className="flex justify-center items-center flex-col bg-gray-100" id="services">
       <div className="pt-10 flex justify-center items-center flex-col gap-5">

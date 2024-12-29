@@ -5,7 +5,7 @@ import ContactFormV2 from "./components/ContactForm";
 import ContactButton from "./components/ContactButton";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import NavBarSection from "./components/NavBar";
-import ServiceSectionBasic from "./components/ServiceSection";
+import ServiceSection from "./components/ServiceSection";
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
       <NavBarSection />
       <Header />
       <ContactButton />
-      <ServiceSectionBasic />
+      <ServiceSection />
       <AboutUsSection />
       <ContactFormV2 />
       <ScrollToTopButton />
