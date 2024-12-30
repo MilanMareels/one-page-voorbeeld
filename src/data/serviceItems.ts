@@ -1,31 +1,31 @@
 export const serviceItems = [
   {
-    src: "https://dummyimage.com/600x400/000/fff",
+    src: "./la-eames.jpg",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit",
   },
   {
-    src: "https://dummyimage.com/600x400/000/fff",
+    src: "./la-lovell.jpg",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit",
   },
   {
-    src: "https://dummyimage.com/600x400/000/fff",
+    src: "./la-schindler.jpg",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit",
   },
   {
-    src: "https://dummyimage.com/600x400/000/fff",
+    src: "./la-sheats.jpg",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit",
   },
   {
-    src: "https://dummyimage.com/600x400/000/fff",
+    src: "./la-stahl.jpg",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit",
   },
   {
-    src: "https://dummyimage.com/600x400/000/fff",
+    src: "./la-wright.jpg",
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit",
   },

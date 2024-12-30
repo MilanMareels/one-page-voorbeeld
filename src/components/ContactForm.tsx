@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 
-export default function ContactFormV2() {
+export default function ContactForm() {
   const [result, setResult] = useState("");
 
   const onSubmit = async (event: any) => {
@@ -44,25 +44,38 @@ export default function ContactFormV2() {
           <label htmlFor="user_name" className="block text-gray-700 font-semibold mb-2">
             Name
           </label>
-          <input type="text" name="name" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your name" required />
+          <input type="text" name="name" className="w-full p-3 border-l-0 border-r-0 border-t-0 focus:outline-none focus:ring-0 focus:border-[#E7E34F]" placeholder="Your name" required />
         </div>
 
         <div>
           <label htmlFor="user_email" className="block text-gray-700 font-semibold mb-2">
             Email
           </label>
-          <input type="email" name="email" id="user_email" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Your email" required />
+          <input
+            type="email"
+            name="email"
+            id="user_email"
+            className="w-full p-3 border-l-0 border-r-0 border-t-0 focus:outline-none focus:ring-0 focus:border-[#E7E34F]"
+            placeholder="Your email"
+            required
+          />
         </div>
 
         <div>
           <label htmlFor="message" className="block text-gray-700 font-semibold mb-2">
             Message
           </label>
-          <textarea name="message" className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" rows={4} placeholder="Your message" required></textarea>
+          <textarea
+            name="message"
+            className="w-full p-3 border-l-0 border-r-0 border-t-0 focus:outline-none focus:ring-0 focus:border-[#E7E34F]"
+            rows={4}
+            placeholder="Your message"
+            required
+          ></textarea>
         </div>
 
         <div className="text-center">
-          <input type="submit" value="Send Message" className="w-full bg-blue-500 text-white p-3 rounded-lg cursor-pointer hover:bg-blue-600 transition" />
+          <input type="submit" value="Send Message" className="w-full bg-transparent border-2 rounded-none border-black text-black p-3 cursor-pointer" />
         </div>
       </form>
     </div>

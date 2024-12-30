@@ -7,7 +7,7 @@ export default function FooterSection() {
       <div className="w-full">
         <div className="grid w-full justify-center sm:flex sm:justify-between md:grid-cols-1">
           <div className="text-center">
-            <Footer.Brand href="https://flowbite.com" src="https://flowbite.com/docs/images/logo.svg" alt="Logo" name="Bedrijfs naam" />
+            <Footer.Brand href="https://flowbite.com" src="./LA aRCHITECKTURE.png" alt="Logo" name="LA aRCHITECKTURE" />
           </div>
           <div className="grid grid-cols-3 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
@@ -20,7 +20,7 @@ export default function FooterSection() {
             <div>
               <Footer.Title title="about" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#about">Bedrijfs naam</Footer.Link>
+                <Footer.Link href="#about">LA aRCHITECKTURE</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>

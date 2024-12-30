@@ -14,10 +14,10 @@ export default function ServiceSection() {
       </div>
       <section className="grid md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1 gap-10 p-10 m-auto">
         {serviceItems.map((i) => (
-          <div className="relative group cursor-pointer">
-            <img src={i.src} className="rounded transition-transform duration-300 ease-in-out group-hover:scale-105 w-[500px] h-[300px] object-cover" />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-start opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
-              <h2 className="text-white text-lg font-bold ml-4">{i.title}</h2>
+          <div className="relative cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105">
+            <img src={i.src} className=" w-[500px] h-[300px] object-cover" />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end items-start">
+              <h2 className="text-[#E7E34F] text-lg font-bold ml-4">{i.title}</h2>
               <p className="text-white text-sm mt-2 ml-4 mb-4 truncate max-w-full pr-4" title={i.description}>
                 {i.description}
               </p>

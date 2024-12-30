@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import AboutUsSection from "./components/AboutUsSection";
 import FooterSection from "./components/Footer";
-import ContactFormV2 from "./components/ContactForm";
+import ContactForm from "./components/ContactForm";
 import ContactButton from "./components/ContactButton";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import NavBarSection from "./components/NavBar";
@@ -15,7 +15,7 @@ export default function App() {
       <ContactButton />
       <ServiceSection />
       <AboutUsSection />
-      <ContactFormV2 />
+      <ContactForm />
       <ScrollToTopButton />
       <FooterSection />
     </main>
